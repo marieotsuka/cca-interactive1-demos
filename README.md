@@ -1,10 +1,9 @@
 # Interactive 1 - Demos
 
-This repository will host all the demo files for lectures.
-You can find the lecture recordings here:
-xxx
+This repository will host all the demo files for technical lectures.
+You can find the recordings on [Panopto](https://ccarts.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=0580d942-5586-4430-a553-acba00033657).
 
-This repository will be updated as we learn more material over the semester.
+This repository will be updated each week as we reveiw more material over the semester.
 Please be sure to Fetch the latest code.
 
 Feel free to copy and paste code from these examples into your own files.
