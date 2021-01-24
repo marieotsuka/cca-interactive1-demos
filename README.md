@@ -1,4 +1,4 @@
-# Interactive 1 - Section 2 - Demos
+# Interactive 1 - Demos
 
 This repository will host all the demo files for lectures.
 You can find the lecture recordings here:
