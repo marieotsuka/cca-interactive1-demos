@@ -1,4 +1,4 @@
-#CSS
+# CSS
 
 Cascade refers to the way the stylesheet processes and assigns weights to rules that apply to the same element, ultimately determining which properties will modify a given element. 
 
