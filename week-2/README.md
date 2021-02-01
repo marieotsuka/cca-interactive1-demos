@@ -264,6 +264,35 @@ Collapsing margins, where two margins cancel out each other,  happens in 2 cases
 
 See examples of [collapsed margins](https://css-tricks.com/what-you-should-know-about-collapsing-margins/)
 
+## Backgrounds
+
+|Syntax|Description|Possible values|
+|---|---|---|
+|`background-image: url(img/bgimg.jpg);`|path to image, relative to css file|absolute / relative paths|
+|`background-repeat: no-repeat;`|whether to tile, and along what axis|`repeat-x`, `repeat-y`, `repeat`(default), `no-repeat`|
+|`background-position: top center;`|horizontal and vertical position|keywords / coordinates in any length unit|
+|`background-attachment: scroll;`|whether or not to scroll with the document|`fixed`, `local`, `scroll`(default)|
+
+
+`background-size: cover;`
+- scales the background image to be as large as possible so that the background area is completely covered by the background image. Some parts of the background image may not be in view within the background positioning area.
+
+`background-size: contain;`
+- scales the image to the largest size such that both its width and its height can fit inside the content area
+
+
+### Gradients
+CSS3 allows you to create gradients as your background image.
+You can use a [CSS Gradient generator](https://cssgradient.io/). Check out cool Examples by [Lea Verou](http://projects.verou.me/css3patterns/).
+
+
+### Blendmodes
+Like Layer Styles in Photoshop, you can also use blend-modes to achieve desired overlapping effects. There are two kinds of blend modes:
+`background-blend-mode` for background images
+`mix-blend-mode` for html elements
+
+See more on CSS [Blend Modes](https://css-tricks.com/basics-css-blend-modes/).
+
 
 ## Advanced Selectors
 You could also use the structure of HTML to select elements in CSS. These include:
