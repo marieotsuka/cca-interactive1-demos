@@ -6,7 +6,7 @@ Every element in web design is a rectangular box styled with CSS.
 
 CSS defines the form of a website’s content by listing rules for how elements should appear.
 
-```
+```css
 p {
   color: blue;
 }
@@ -40,7 +40,7 @@ Second paragraph text.
 ### Internal CSS
 
 Internal CSS is declared within the head of the document. Selectors apply to all instances of that page. This keeps the HTML markup clean and uncluttered. It’s much more efficient than inline styling, but not as effective as external stylesheets.
-```
+```html
 <html>
 <head>
 	<style type="text/css">
@@ -63,22 +63,21 @@ External CSS keeps all css declarations in a separate document that gets pulled 
 Selectors apply to *all instances of elements in all webpages that use the same stylesheet*. This method is the ideal method of formatting your site, since it ensures consistency across pages. It also keeps things flexible: by changing one property in the external stylesheet, all instances could be easily changed.
  
 
+## Parents and Children
+We refer to the nested structure of HTML by this family-tree like relationship. Elements (B) nested within another (A) are called **children** of A; A is a **parent** of B.
+
+```html
+<div class="container">
+	<p>This paragraph is a child of the <div class="container"> element</p>
+</div>
+```
+
 ## Inheritance
 
 Inheritance refers to how children take on css properties of their parents if they don’t have that property specified. Not all css declarations are inherited.  
 
 
-```
-div {
-  color: blue;
-  border: 1px solid gray;
-}
-
-span {
-  color: red;
-}
-```
-
+For example, `border` is not inherited by children, but `font-size` is. You can see whether a property inherits or not by looking up the property name in the [MDN documentation](https://developer.mozilla.org/en-us/docs/Web/CSS/Reference).
 
 
 ## The Cascade 
@@ -106,7 +105,7 @@ By understanding inheritance and the cascade, we can write overarching rules tha
 ### Element selector
 We’ve already seen the type selector that matches element names. 
 
-```
+```css
 h2 {
 	font-size: 3em;
 }
@@ -115,7 +114,7 @@ h2 {
 ### Multiple selection
 By separating selectors with commas, you can apply the same rule to multiple HTML elements.
 
-```
+```css
 h2, .introduction {
 	font-size: 3em;
 }
@@ -126,7 +125,7 @@ h2, .introduction {
 By assigning a **class** to elements (with the `class` attribute) in your HTML, we can apply your rule to just elements that have that particular class. In your stylesheet, all class names are preceded by a period (`.`). 
 
 CSS
-```
+```css
 .highlight {
 	background: yellow;
 }
@@ -137,7 +136,7 @@ CSS
 ```
 
 HTML
-```
+```html
 <p id="demo">This is Demo text </p>
 <p class="highlight"> Paragraph text 1 </p>
 <p> Paragraph text 2 </p>
