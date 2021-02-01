@@ -234,7 +234,7 @@ Components of the box model
 - height: the height of the content\*
 
 
-```
+```css
 .box {
   width: 300px;
   height: 200px;
@@ -246,6 +246,7 @@ Components of the box model
 ```
 
 <div style="width: 300px; height: 200px; border: 6px solid coral; background: pink; padding: 10px; margin: 5px 20px 30px auto;">
+	content
 </div>
 
 
