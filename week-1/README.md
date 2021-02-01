@@ -35,10 +35,6 @@ HTML is the language of web pages interpreted by web browsers.
 - HTML defines web content by organizing text comprised of a series of nested tags
 - HTML can be created with any simple text editor.
 
-- **content, HTML**
-- form, CSS
-- behavior, JavaScript
-
 
 An `.html` file has 2 forms:
 1. As code, in your text editor.
@@ -119,44 +115,6 @@ These are examples of incorrect syntax:
 All HTML elements flow from the top to the bottom.
 Any whitespace (tabs or spaces) within the HTML file will have no effect on the rendered markdown; rather, it is a tool for writing readable code.
 Nested elements should be kept tabbed for readability: it will help you see where the opening and closing tags of elements.
-
-
-## Inline vs. Block elements
-There are two primary display formats for elements.
-
-<div class="diagram">
-	<div class="line">
-	</div>
-	<div class="flex">
-		<span class="inline marked">
-		</span>
-		<span class="inline marked">
-		</span>
-		<span class="inline marked">
-		</span>
-	</div>
-	<div class="line">
-	</div>
-</div>
-
-An **inline element** continues along the same line as its neighboring elements and occupies as much space (width) as its content. i.e.: `<a>`, `<b>`, `<em>`, `<img>`, and `<span>`.
-
-<div class="diagram">
-	<div class="line">
-	</div>
-	<div class="line marked">
-	</div>
-	<div class="line">
-	</div>
-</div>
-
-A **block element** always appears on a new line; by default,  it’s as wide as its parent (containing) elements i.e.`<section>`,`<article>`, `<h1>`, `<p>`, `<ul>`, `<li>`, and `<div>`.
-
-These are default `display` CSS properties for each element.
-
-We often use the generic `<span>` and `<div>` elements with [CSS classes]({{<ref "02-css.md#classes-and-ids">}}) for formatting.
-- to select in-line elements, such as text, we wrap them in a `span`
-- to group several elements together, we wrap them in a `div`
 
 
 ## Elements and Attributes

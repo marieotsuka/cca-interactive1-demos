@@ -79,9 +79,6 @@ span {
 }
 ```
 
-<div>
-<h1>Cascading <span>Style</span> Sheets</h1>
-</div>
 
 
 ## The Cascade 
@@ -208,6 +205,22 @@ Read more on [How to use custom fonts](https://developer.mozilla.org/en-US/docs/
 |`rem`| ratio relative to the document root size
 |`%`| percentage ratio relative to the element’s immediate parent container, based on the size of same property of the parent element
 |`vw` or `vh`| 1 viewport unit is 1% of the window width or line-height
+
+
+## Inline vs. Block elements
+There are two primary display formats for elements.
+
+
+An **inline element** continues along the same line as its neighboring elements and occupies as much space (width) as its content. i.e.: `<a>`, `<b>`, `<em>`, `<img>`, and `<span>`.
+
+A **block element** always appears on a new line; by default, it’s as wide as its parent (containing elements) i.e.`<section>`,`<article>`, `<h1>`, `<p>`, `<ul>`, `<li>`, and `<div>`.
+
+These are default `display` CSS properties for each element.
+
+We often use the generic `<span>` and `<div>` elements with CSS classes for formatting.
+- to select in-line elements, such as text, we wrap them in a `span`
+- to group several elements together, we wrap them in a `div`
+
 
 ## The Box Model
 The [box model](https://css-tricks.com/the-css-box-model/) refers to how block-level elements can be controlled. 
