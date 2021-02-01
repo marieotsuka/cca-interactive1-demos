@@ -183,7 +183,8 @@ Some common text-styling properties:
 |`font-size`|text size|see units|
 |`font-weight`|the weight of your type|normal, bolder, 700|
 |`font-style`|text formatting|normal, italic, oblique|
-|`line-height`|“leading” or height of box surrounding line|best declared unit-less, relative to font (see why)|
+|`letter-spacing`|“tracking” or space between letters|see units|
+|`line-height`|“leading” or height of box surrounding line|best declared unit-less, relative to font (see [why](https://css-tricks.com/almanac/properties/l/line-height/#unitless-line-heights))|
 |`text-transform`|text case|capitalize, uppercase, lowercase, none|
 
 
