@@ -37,9 +37,9 @@ https://css-tricks.com/the-shapes-of-css/
 
 /* try uncommenting below to see blur on hover */
 
-/*.shape:hover div {
+.shape:hover div {
 	filter: blur(10px);
-} */
+} 
 
 /* circles */
 
