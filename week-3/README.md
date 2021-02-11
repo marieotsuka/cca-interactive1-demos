@@ -34,7 +34,7 @@ You can target different elements on the hover by using the nested structure of 
 ```
 
 ```CSS
-rect {
+.rect {
 	width: 40px;
 	height: 437px;
 	background: black;
@@ -48,7 +48,7 @@ rect {
 	background: red;
 }
 
-/*when you hover over any part of thee whole shape, all bars become blue */
+/*when you hover over any part of the shape div, all bars contained within become blue */
 .shape:hover .bar{
 	background: blue;
 }
@@ -82,13 +82,6 @@ For 2dimensional transforms, the x-value is declared first, then the y-value.
 }
 ```
 
-<div class="diagram" style="height: 150px; position: relative;">
-<div class="square dotted" style="width: 50px; height: 50px; background: red; position: absolute;">
-</div>
-<div class="square marked" style="width: 50px; height: 50px; background: red; position: absolute; transform: rotate(-10deg); transform-origin: bottom left;">
-</div>
-</div>
-
 ### Rotate
 `rotate()` Rotates the div clockwise or counter-clockwise(-), specified in degrees (deg).
 
@@ -98,15 +91,6 @@ For 2dimensional transforms, the x-value is declared first, then the y-value.
 }
 ```
 
-<div class="diagram" style="height: 150px">
-<div class="square dotted" style="position: absolute;">
-</div>
-<div class="square marked" style="position: absolute; transform: rotate(30deg); ">
-</div>
-</div>
-
-
-
 ### 2D Translate
 `translate()` moves an element sideways, up, or down. This can be specified in any length unit.
 
@@ -115,13 +99,6 @@ For 2dimensional transforms, the x-value is declared first, then the y-value.
   transform: translate(40px, 20px);
 }
 ```
-
-<div class="diagram" style="height: 150px">
-<div class="square dotted" style="position: absolute;">
-</div>
-<div class="square marked" style="position: absolute; transform: translate(40px, 20px);">
-</div>
-</div>
 
 ### Scale
 `scale()` stretches an element horizontally and/or vertically. Scale values are unitless. This also applies to the font-size, padding, height, and width of an element.
@@ -136,21 +113,6 @@ For 2dimensional transforms, the x-value is declared first, then the y-value.
 }
 ```
 
-<div class="diagram" style="height: 150px">
-<div class="square dotted" style="position: absolute;">
-</div>
-<div class="square marked" style="position: absolute; transform: scale(.7);">
-</div>
-</div>
-
-<div class="diagram" style="height: 150px">
-<div class="square dotted" style="position: absolute;">
-</div>
-<div class="square marked" style="position: absolute; transform: scale(.5, 1.5);">
-</div>
-</div>
-
-
 ### Skew
 `skew()` stretches an element horizontally and/or vertically. Skews are defined in degrees. Contained elements, such as text, will also be skewed.
 
@@ -159,14 +121,6 @@ For 2dimensional transforms, the x-value is declared first, then the y-value.
   transform: skew(10deg,30deg);
 }
 ```
-
-<div class="diagram" style="height: 150px">
-<div class="square dotted" style="position: absolute;">
-</div>
-<div class="square marked" style="position: absolute; transform: skew(10deg,30deg);">
-</div>
-</div>
-
 
 ### Combining transforms
 
@@ -178,14 +132,6 @@ Multiple transforms can be applied to the same element with a space in between. 
   transform: scale(.3, 1.2) rotate(30deg) skewY(-15deg) translate(50px, 20%);
 }
 ```
-
-<div class="diagram" style="height: 150px">
-<div class="square dotted" style="position: absolute;">
-</div>
-<div class="square marked" style="position: absolute; transform: scale(.3, 1.2) rotate(30deg) skewY(-15deg) translate(50px, 20%);">
-</div>
-</div>
-
 
 ## CSS Transitions
 Transform functions combine well with CSS animations and transitions. 
