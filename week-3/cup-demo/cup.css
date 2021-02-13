@@ -1,0 +1,31 @@
+body{
+
+}
+
+
+.cup{
+    width: 400px;
+    display: flex;
+    transition: transform 300ms;
+}
+.cup:hover{
+    transform: rotate(-45deg)
+}
+.square{
+    width: 300px;
+    height: 500px;
+    background: red;  
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.handle{
+    width: 100px;
+    height: 300px;
+    background: blue;
+    position: relative;
+    top: 50px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+
