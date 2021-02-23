@@ -22,7 +22,6 @@ nav {
 	overflow: visible;
 	position: relative;
 	top: calc(50vh - 400px);
-	background: blue;
 }
 
 /* letter */
@@ -51,7 +50,6 @@ nav {
 	height: 615px;
 	top: 50px;
 	left: 400px;
-	background: red;
 }
 
 .top-round {
@@ -102,7 +100,6 @@ nav {
 }
 
 #showcase:hover  #a .top-round {
-	background: yellow;
 }
 
 
