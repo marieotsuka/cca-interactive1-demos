@@ -10,15 +10,64 @@ body{
 }
 
 main{
-    max-width: 80%;
+   	width: 80%;
     margin: 2rem auto;
+}
+
+#large, #small{
+	display: none;
+}
+
+.message{
+	font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+	body{
+		background: yellow;
+	}
+	main{
+		width: 1000px;
+	}
+	#large{
+		display: block;
+	}
+	#medium{
+		display: none;
+	}
 }
 
 
 @media screen and (max-width: 800px) {
-
+	body{
+		background: pink;
+	}
+	main{
+		width: 95%;
+		font-size: 18px;
+		line-height: 1.2;
+	}
+	#medium{
+		display: none;
+	}
+	#small{
+		display: block;
+	}
 }
 
 @media print {
+
+	body{
+		font-size: 10.5pt;
+		line-height: 1.5;
+	}
+
+	main{
+		width: 90%;
+	}
+
+	p{
+		max-width: 30em;
+	}
 
 }
