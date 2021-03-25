@@ -20,18 +20,41 @@ body {
 	height: 900px;
 	border: 10px solid black;
 
+	background: black;
+
 	/* uncomment below to enable the grid */
 
-	/*	
-	display: grid;
+/*	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	grid-gap: 10px;
-	*/
+	grid-gap: 10px;*/
 	
-	background: black;
 }
 
 .item {
 	background: white;
 }
+
+/* uncomment below to alter the shape */
+
+/*#a {
+	grid-row-start: 1;
+	grid-row-end: 3; 
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background: red;
+}*/
+
+/* uncomment below to adjust with a media query */
+
+/*@media screen and (max-width: 1000px) {
+
+	#a {
+		grid-row-start: 1;
+		grid-row-end: 2; 
+		grid-column-start: 1;
+		grid-column-end: 2;
+		background: red;
+	}
+
+}*/
