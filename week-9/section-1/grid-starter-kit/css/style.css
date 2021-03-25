@@ -7,10 +7,17 @@ body {
 	font-size: 44px;
 }
 
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
 #grid {
 	width: 900px;
 	height: 900px;
-	margin: 40px auto;
 	border: 10px solid black;
 
 	/* uncomment below to enable the grid */
