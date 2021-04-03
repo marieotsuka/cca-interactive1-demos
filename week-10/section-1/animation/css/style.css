@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 44px;
+}
+
+#oval {
+	height: 150px;
+	width: 300px;
+	border-radius: 50%;
+	background: palegreen;
+	margin: 100px;
+	transition: all 1500ms ease;
+	font-size: 10px;
+}
+
+#oval:hover {
+	background: blue;
+	font-size: 100px;
+	transform: scale(2);
+}
+
+
+#rectangle {
+	height: 150px;
+	width: 300px;
+	background: wheat;
+	margin: 100px;
+	animation-name: rotate;
+	animation-duration: 1500ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#rectangle:hover {
+	animation-play-state: paused;
+}
+
+@keyframes rotate {
+	0% { 
+		transform: rotate(0deg); 
+		background: wheat;
+	}
+	10% { 
+		transform: rotate(360deg); 
+		background: yellow;
+	}
+	100% { 
+		transform: rotate(60deg); 
+		background: green;
+	}
+}
+
+/* 
+	pong animation 
+	adapted from: https://css-tricks.com/bounce-element-around-viewport-in-css/;
+	
+*/
+
+/*.x, .y {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.x {
+	animation: x 5s linear infinite alternate;
+	background: yellow;
+}
+
+.y {
+	background: red;
+	border-radius: 30px;
+	animation: y 3s linear infinite alternate;
+}
+
+
+@keyframes x {
+	100% {
+		transform: translateX(calc(100vw - 15px));
+	}
+}
+
+@keyframes y {
+	100% {
+		transform: translateY(calc(100vh - 15px));
+	}
+}
+
+*/
