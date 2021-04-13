@@ -261,8 +261,8 @@ Logical operators combine multiple conditions
 
 |operator|description|
 |---|---|
-|`&&`| logical AND <br> `3 < 5 && 2 > 9 // evaluates to false`
-|`||`| logical OR <br> `3 < 5 || 2 > 9 // evaluates to true`
+|"&&"| logical AND <br> `3 < 5 && 2 > 9 // evaluates to false`
+|"||"| logical OR <br> `3 < 5 || 2 > 9 // evaluates to true`
 
 
 ## Conditionals
