@@ -15,6 +15,36 @@ DOM stands for Document Object Model. It is a programming interface for HTML and
 You can think a HTML document as a nested stracture of html as a tree of objects. 
 This object model is used by browsers to specify the logical structure of web pages, and based on this structure to render HTML elements on the screen. Whenever you open the Web Inspector, for example, you are drilling through the DOM tree.
 
+## JavaScript
+
+Unlike HTML and CSS, Javascript is a programming language and can *perform* all sorts of actions. JavaScript is list of instructions to be interpreted and executed by your computer, either by a browser or other JavaScript interpreter (in the command line.) 
+
+- content, HTML
+- form, CSS
+- **behavior, JavaScript**
+
+Javascript can add interactivity to a page by manipulating the DOM (Document Object Model).
+- Access the content of the page
+- Modify the content of the page
+- Program rules or instructions the browser can follow
+- React to events triggered by the user or browser
+- Use an API via HTTP(S)
+
+
+
+## Setup
+Like CSS, JavaScript can be included within the `<head></head>` your `html` file as well as linked as an external file. It can also be included at the bottom of your document, right before the closing `</body>` tag.
+
+```HTML
+<!-- Internal JavaScript -->
+<script language="javascript" type="text/javascript">
+  JavaScript code 
+</script>
+
+
+<!-- External JavaScript -->
+<script language="javascript" src="js/filename.js"></script>
+```
 
 ### How to use jQuery
 
@@ -57,36 +87,6 @@ The jQuery basic syntax is `$(selector).action()`:
 - A `(selector)` defines “query (or find)” HTML elements
 - A `action()` to be performed on the elements.
 
-
-
-## JavaScript
-
-Unlike HTML and CSS, Javascript is a programming language and can *perform* all sorts of actions. JavaScript is list of instructions to be interpreted and executed by your computer, either by a browser or other JavaScript interpreter (in the command line.) 
-
-- content, HTML
-- form, CSS
-- **behavior, JavaScript**
-
-Javascript can add interactivity to a page by manipulating the DOM (Document Object Model).
-- Access the content of the page
-- Modify the content of the page
-- Program rules or instructions the browser can follow
-- React to events triggered by the user or browser
-- Use an API via HTTP(S)
-
-## Setup
-Like CSS, JavaScript can be included within the `<head></head>` your `html` file as well as linked as an external file. It can also be included at the bottom of your document, right before the closing `</body>` tag.
-
-```HTML
-<!-- Internal JavaScript -->
-<script language="javascript" type="text/javascript">
-  JavaScript code 
-</script>
-
-
-<!-- External JavaScript -->
-<script language="javascript" src="js/filename.js"></script>
-```
 
 ## Output
 When you instruct Javascript to perform a task, it will usually give you some output, but it won’t automatically display it anywhere. You can verify your result by using the Console of your browser.
