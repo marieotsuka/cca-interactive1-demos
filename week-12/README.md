@@ -71,7 +71,7 @@ OR
 If you don't want to download and host jQuery yourself, you can include it from a CDN (stands for Content Delivery Network). It means a system of computers that exist all over the world and cache files for users to access. CDNs can greatly reduce the load time of a page by offering files at a higher bandwidth from a server that is physically closer to your visitor than your web server might be. The jQuery library will already be cached in the visitor's browser if they visited another website that references the same jQuery library. In this case, the visitor won't even have to download the jQuery library.
 
 
-### How to use jQuery
+### Writing Javascript with jQuery
 
 When you write JavaScript using jQuery, you should always wrap the JavaScript in a special jQuery function that waits to run the code until the rest of the document (DOM) has finished loading.
 
