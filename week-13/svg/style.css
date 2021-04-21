@@ -1,0 +1,14 @@
+.star{
+	width: 500px;
+}
+
+#star-svg{
+	width: 100%;
+	fill: red; /*NOT background: red;*/
+	stroke: yellow;
+	stroke-width: 2px; /*NOT border*/	
+}
+
+#star-svg:hover{
+	fill: blue;
+}
